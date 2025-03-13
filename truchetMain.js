@@ -1,4 +1,4 @@
-import { defaultTileSet, generateTiles } from './truchet.js';
+import { defaultTileSet, generateTiles } from "./truchet.js";
 import {
   borderLands,
   circle,
@@ -16,7 +16,7 @@ import {
   topBottom,
   quarterLand,
   wild,
-} from './tileGenerators.js';
+} from "./tileGenerators.js";
 
 // Vary this. Try any or all of the above
 // Also try each algorithm with a variety of widths and heights
@@ -42,6 +42,6 @@ const tg7 = glitch(classicAlternate, 0.05);
 
 // Try combining glitching, wild and topBottom/leftRight in various combinations
 
-const [width, height] = Deno.args.map(x => +x);
+const [width, height] = Deno.args.map((x) => +x);
 
 console.log(generateTiles(width, height, tg3));
